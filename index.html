@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <meta name="auther" content="BhagatBhutale">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="description" content="This is a simple DOM assignemnt">
+    <meta name="kaywords" content="DOM,HTML, CSS, Javascript">
+    <meta name="copyright" content="BrokeX.com">
+</head>
+<body>
+   <div id="header">
+    <h1>Student Registration System</h1>
+    <p>A Student Registration Page is a simple form where students can enter their details to sign up and fill this simple form.</p>
+  </div>
+
+  <div id="main-page">
+    <div class="left-form">
+      <form id="studentForm">
+        <h2>Student Registration</h2>
+        <label for="studentId">Student ID:</label><br>
+        <input type="text" id="studentId" placeholder="Enter Student Id" required><br>
+
+        <label for="studentName">Student Name:</label><br>
+        <input type="text" id="studentName" placeholder="Enter Student Name" required><br>
+
+        <label for="studentClass">Class:</label><br>
+        <input type="text" id="studentClass" placeholder="Enter Class" required><br>
+
+        <label for="studentRollNo">Roll Number:</label><br>
+        <input type="number" id="studentRollNo" placeholder="Enter Roll Number" required><br><br>
+
+        <button id="submitButton" type="button">Submit</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Registered Students</h2>
+      <table id="studentsTable">
+        <thead>
+          <tr>
+            <th>StudentID</th>
+            <th>StudentName</th>
+            <th>StudentClass</th>
+            <th>StudentRollNo</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+    <script src="./JS/app.js"></script>
+</body>
+</html>
